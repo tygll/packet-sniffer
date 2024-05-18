@@ -1,28 +1,30 @@
-#README for Packet Sniffer#
-##Overview##
+# README for Packet Sniffer #
+## Overview ##
 This repository contains a Python script for a packet sniffer. A packet sniffer is a tool that captures and analyzes packets that are sent over a network. This specific script captures Ethernet frames and decodes different types of packets, such as IPv4, ICMP, TCP, and UDP packets.
 
-##Features##
+## Features ##
 - Capture and decode Ethernet frames.
 - Extract and display details of IPv4 packets.
 - Decode and display ICMP, TCP, and UDP segments.
 - Display the raw data of unknown protocols.
 
-##Prerequisites##
+## Prerequisites ##
 - Python 3.x
 - Root/Administrator privileges (required to create raw sockets)
 
-##Usage##
+## Usage ##
 1. Clone the repository:
-```git clone https://github.com/yourusername/packet-sniffer.git
+```
+git clone https://github.com/yourusername/packet-sniffer.git
 cd packet-sniffer
 ```
 2. Run the script with root/administrator privileges:
-```sudo python3 packet_sniffer.py
+```
+sudo python3 packet_sniffer.py
 ```
 
-##Script Details##
-###packet_sniffer.py###
+## Script Details ##
+### packet_sniffer.py ###
 The script consists of the following main parts:
 - main(): Sets up a raw socket to capture packets and processes each captured packet.
 - ethernet_frame(data): Extracts the Ethernet frame information.
@@ -35,5 +37,5 @@ The script consists of the following main parts:
 - format_multiline(prefix, string, size=80): Formats the data for multiline output.
 - tab(n, dash=True): Helper function to format tabbed output.
 
-##License##
+## License ##
 This projects is licensed under the MIT License.
