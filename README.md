@@ -1,6 +1,6 @@
 # README for Packet Sniffer #
 ## Overview ##
-This repository contains a Python script for a packet sniffer. A packet sniffer is a tool that captures and analyzes packets that are sent over a network. This specific script captures Ethernet frames and decodes IPv4 packets.
+This repository contains a Python script for a packet sniffer. A packet sniffer is a tool that captures and analyzes packets that are sent over a network. This script captures Ethernet frames and decodes the IPv4 packets within.
 
 ## Features ##
 - Capture and decode Ethernet frames.
